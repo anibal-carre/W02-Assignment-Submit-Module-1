@@ -1,0 +1,35 @@
+VIDEO GAME SALES ANALYZER
+Scope: USER-SUPPLIED DATASET
+Source file: vgsales.csv
+Sales are in millions of units, not dollars.
+A record represents a game/platform entry, not always a unique game.
+Loaded rows: 16598
+Usable rows: 16598
+Excluded rows: 0
+Distinct genres: 12; platforms: 31
+
+QUESTION 1: Which five genres have the highest global sales?
+       Genre  Global_Sales_Millions  Game_Entries
+      Action                1751.18          3316
+      Sports                1330.93          2346
+     Shooter                1037.37          1310
+Role-Playing                 927.37          1488
+    Platform                 831.37           886
+Answer: Action ranks first with 1751.18 million units in this dataset.
+
+QUESTION 2: Which five platforms lead in North America + Europe sales,
+and which region contributes more for each?
+Platform  NA_Sales_Millions  EU_Sales_Millions  Game_Entries  Combined_NA_EU_Millions Larger_Region
+     PS2             583.84             339.29          2161                   923.13 North America
+    X360             601.05             280.58          1265                   881.63 North America
+     Wii             507.71             268.38          1325                   776.09 North America
+     PS3             392.26             343.71          1329                   735.97 North America
+      DS             390.71             194.65          2163                   585.36 North America
+Answer: PS2 ranks first with 923.13 million combined units.
+See the Larger_Region column for each platform's regional comparison.
+
+LIMITATIONS
+Historical source data may be incomplete or contain category errors.
+Results depend on the file analyzed; a top-50 subset is not representative.
+Worldwide totals are taken from Global_Sales rather than recalculated
+from regional columns (rounding may cause small differences).
